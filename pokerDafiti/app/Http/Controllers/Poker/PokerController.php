@@ -26,7 +26,7 @@ class PokerController
        $poker = $this->pokerService->handler($cards);
 
         if (!$poker['state']) {
-            return response()->json(['state' => false, 'data' => $poker['message']], 500);
+            return response()->json(['state' => false, 'data' => $cards, 'message' => $poker['message']], 500);
         }
 
         return response()->json(['state' => true, 'data' => $cards, 'message' => "Es escalera"], 200);
