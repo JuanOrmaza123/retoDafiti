@@ -16,7 +16,11 @@ class PokerService implements PokerServiceInterface
         $validateCheck = $this->validateCheck($check);
 
         if(!$validateCheck['state']){
-            return $validateCheck;
+            return [
+                'state' => $validateCheck['state'],
+                'data' => $cards,
+                'message' => $validateCheck['message']
+            ];
         }
 
         $orderedCheck = $this->cleanAndOrderCheck($check);
