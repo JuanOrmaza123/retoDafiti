@@ -7,7 +7,7 @@ Las respuetas de las preguntas se encuentran en el archivo "Prueba técnica Dafi
 El algoritmo se realiza con Lumen, un microframework heredado de Laravel.
 ### Pasos
 1. Clonar el repositorio ```git clone https://github.com/JuanOrmaza123/retoDafiti.git```.
-2. Pasar a la carpeta ```pokerDafiti```.
+2. Pasar a la carpeta ```retoDafiti/pokerDafiti```.
 3. Ejecutar ```composer install```.
 4. Cambiarle el nombre al archivo ```.env.example``` a ```.env```.
 5. Ejecutar ```php -S localhost:8000 -t public```.
